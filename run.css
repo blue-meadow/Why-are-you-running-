@@ -1,0 +1,98 @@
+/* 
+    body
+    {
+        background-color: f7f7f7;
+    }
+    
+    #runner
+    {
+        height: 253px;
+        background-image: url(runsir.png);
+        width: 137px;
+        animation-name: walking 1s step(8) infinite,for 5s linear infinite;   
+    }
+    @keyframes walking
+    {
+        0%
+        {
+            background-position: 0px;
+        }
+        100%
+        {
+            background-position: 860px;
+        }
+    }
+    @keyframes for
+    {
+        0%
+        {
+            transform: translateX(-100px);
+        }
+        100%
+        {
+            transform: translateX(1500px);
+        }
+    } */
+    #road
+    {
+        width:5000px;
+        border-bottom: 8px dashed ;
+        top: 580px;    
+    }
+    body
+    {
+        background-color: f7f7f7;
+    }
+    @keyframes walk
+    {
+        0%
+        {
+            background-position: 0px;
+        }
+        100%
+        {
+            background-position: 1536px;
+        }
+
+    }
+    @keyframes example
+    {
+        0%
+        {
+            transform:translateX(-100px);
+        }
+        100%
+        {
+            transform: translateX(1700px);
+        }
+      }
+
+
+      #runner{
+          position: relative;
+          left: 90px;
+          top: 3px;
+        width: calc(1536px/6);
+        height: 256px;
+        transform: translate(-50%,-50%);
+        background: url(duo.png);
+        animation: walk 1s steps(6) infinite,example 5s linear infinite;
+
+      }
+      #road
+      {
+          animation: road 10s  linear infinite;
+        
+      }
+
+      @keyframes road
+      {
+          from  
+          {
+              transform: translateX(0px);
+          }
+          to
+          {
+              transform: translateX(-1100px);
+          }
+      }
